@@ -60,12 +60,25 @@ nav li a:hover {
   transition-duration: 400ms;
 }
 
-.inspan h2 {
+.inspan, .inspan h2 {
   font-weight: 550;
 }
 
-.inspan {
-  font-weight: 550;
+
+.landing {
+  background-image: url(temporarylanding.jpg);
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing h2 {
+  font-size: 50px;
+  padding: 350px;
+  font-weight: 150;
+  color: var(--contrast);
 }
 
 footer {
