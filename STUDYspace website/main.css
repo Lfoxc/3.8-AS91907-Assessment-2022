@@ -1,4 +1,76 @@
+/* Variables to make using colors easier*/
 :root {
   --primary: #FF6347;
   --contrast: #FFFFFF;
+  --hover: #993b2b;
+}
+
+/* Default CSS for all pages */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+/* Navigation */
+
+nav {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: var(--primary);
+  color: var(--contrast);
+}
+
+nav li, nav a {
+  display: inline-block;
+  font-size: 18px;
+}
+
+nav .fas {
+  margin-right: 9px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  padding: 15px 10px;
+}
+
+nav h2 {
+  float: left;
+  font-size: 40px;
+  padding-left: 10px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--contrast);
+  padding: 25px 20px;
+}
+
+nav li a:hover {
+  color: var(--hover);
+  transition-duration: 400ms;
+}
+
+.inspan h2 {
+  font-weight: 550;
+}
+
+.inspan {
+  font-weight: 550;
+}
+
+footer {
+  font-size: 18px;
+  background-color: var(--primary);
+  color: var(--contrast);
+  padding: 30px 50px;
 }
