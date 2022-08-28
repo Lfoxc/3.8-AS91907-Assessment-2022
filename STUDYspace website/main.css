@@ -3,6 +3,8 @@
   --primary: #FF6347;
   --contrast: #FFFFFF;
   --hover: #993b2b;
+  --back: #F7F5F6;
+  --default-check: ##D5D5D5;
 }
 
 /* Default CSS for all pages */
@@ -24,6 +26,7 @@ nav {
   position: fixed;
   background-color: var(--primary);
   color: var(--contrast);
+  z-index: 10;
 }
 
 nav li, nav a {
@@ -60,9 +63,17 @@ nav li a:hover {
   transition-duration: 400ms;
 }
 
+/* For span tags */
+
 .inspan, .inspan h2 {
   font-weight: 550;
 }
+
+.outspan {
+  color: var(--primary);
+}
+
+/* Landing page */
 
 
 .landing {
@@ -75,11 +86,106 @@ nav li a:hover {
 }
 
 .landing h2 {
-  font-size: 50px;
+  font-size: 65px;
   padding: 350px;
   font-weight: 150;
   color: var(--contrast);
 }
+
+/* For the textblock classes that is used in all pages */
+
+body {
+    background-color: var(--back);
+}
+
+.textblock {
+    padding: 50px 250px;
+}
+
+.textblock h3 {
+  text-align: center;
+  padding: 50px 0px;
+  font-size: 45px;
+}
+
+.textblock p {
+  text-align: left;
+  align-items: center;
+  line-height: 1.8;
+}
+
+/* For buttons */
+
+.btn {
+  background-color: var(--primary);
+  color: var(--contrast);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+#to-top {
+  float: right;
+  margin-right: 20px;
+}
+
+.webcheck {
+  border: 5px solid var(--primary);
+  height: 200px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--contrast);
+  margin-bottom: 100px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70px;
+  height: 70px;
+  background-color: #d5d5d5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+label {
+  font-size: 80px;
+  padding-left: 30px;
+}
+
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 1000;
+  font-size: 40px;
+  content: "\f00c";
+  color: var(--contrast);
+  display: none;
+}
+
+input[type="checkbox"]:hover {
+  background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+/* Footer */
 
 footer {
   font-size: 18px;
