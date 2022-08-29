@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <script src="https://kit.fontawesome.com/33a06fc26a.js" crossorigin="anonymous"></script>
   <title>Home - STUDYspace</title>
 </head>
@@ -42,7 +43,7 @@ for STUDYspace once it is released!</p>
       <input type="checkbox" id = "check">
       <label for = "check">Youtube</label>
     </div>
-    <h4><span class = "outspan"><span class ="inspan">Manual</span></span> mode</h4>
+    <h3>Manual mode</h3>
     <p>The main purpose of using STUDYspace is to allow students to identify their
     biggest distractions in the digital world and take action to prevent these distractions
   from affecting their studies. Manual mode allows users to manually control how long they
@@ -52,58 +53,37 @@ Once the block is activated, users can choose when they want it to be disabled.<
   </section>
 
   <section class = "textblock">
-    <div class = "time">
-      <div class = "arrow">
-        <i class="fa-solid fa-angle-up"></i>
-        <i class="fa-solid fa-angle-up"></i>
-      </div>
+    <div class = "webcheck" id = "time">
+      <div class = "updown" id = "up">
+        <i class="fan fa-solid fa-angle-up"></i>
+        <i class="fan fa-solid fa-angle-up"></i>
+     </div>
       <h1>10:00</h1>
-      <div class = "arrow">
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
+      <div class = "updown" id = "down">
+      <i class="fan fa-solid fa-angle-down"></i>
+      <i class="fan fa-solid fa-angle-down"></i>
+    </div>
       <button class = "btn">Start</button>
       <button class = "btn">Pause</button>
-      <h4>This timer will start once the previous timer has finished!</h4>
-      <h2>02:00</h2>
     </div>
-    <h4><span class = "outspan"><span class ="inspan">Pomodoro</span></span> mode</h4>
-    <p>The Pomodoro technique is a popular time management tool which is
+    <h3>Timed modes: Pomodoro & Exam mode</h3>
+    <p><span class = "outspan"><span class = "inspan">Pomodoro mode</span></span> makes use of the Pomodoro technique. The Pomodoro technique is a popular time management tool which is
       frequently used by people who struggle with distractions or procrastinates
-      easily. Originally, Pomodoro mode was going to be loosely based off its namesake
-      technique and would only make use of the time management component. However,
-      while STUDYspace wants to encourage productivity we also want to ensure our
-      users are not exhausting themselves. This is why we decided to stick with
-      the original Pomodoro technique with one difference; the user can choose a
-      time from between 10-45 minutes, with a break interval that takes the user's
-      chosen time and divides it by 5. After the user has chosen a time, they will
+      easily. In this mode, the user can choose a time of up to 25 minutes along with the length of
+      their rest breaks between study sessions. After the user has chosen a time, they will
     then move onto choosing the websites they want to be blocked for their chosen time.</p>
-  </section>
-
-  <section class = "textblock">
-    <div class = "time">
-      <div class = "arrow">
-        <i class="fa-solid fa-angle-up"></i>
-        <i class="fa-solid fa-angle-up"></i>
-        <i class="fa-solid fa-angle-up"></i>
-      </div>
-      <h1>00:00:00</h1>
-      <div class = "arrow">
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-      <button class = "btn">Start</button>
-      <button class = "btn">Pause</button>
-    </div>
-    <h4><span class = "outspan"><span class ="inspan">Exam</span></span> mode</h4>
-    <p>Exam mode is our newest STUDYspace mode concept. Similar to Pomodoro mode, Exam mode will require the user to choose a time of their choice. However,
+    <br>
+    <br>
+    <p><span class = "outspan"><span class = "inspan">Exam mode</span></span> is our newest STUDYspace mode concept. Similar to Pomodoro mode, Exam mode will require the user to choose a time of their choice. However,
       Exam mode will simulate real exam time constraints, meaning the user will only be able to choose a time between 45 minutes and 3 hours.
       Once a time is selected, STUDYspace will block all websites except for Google and it's applications to allow for zero distractions
     much like in real exams.</p>
   </section>
 
+
   <section class = "sub">
+    <h3>Sign up now</h3>
+    <p>To receive updates on <span class = "outspan"><span class = "inspan">STUDY</span>space's</span> development.</p>
     <input type="text" placeholder = "Your Email Address...">
     <button class = "btn">Sign up!</button>
   </section>
