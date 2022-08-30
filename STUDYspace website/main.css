@@ -2,7 +2,6 @@
 :root {
   --primary: #FF6347;
   --contrast: #FFFFFF;
-  --hover: #993b2b;
   --back: #F7F5F6;
   --default-check: ##D5D5D5;
 }
@@ -14,7 +13,7 @@
   padding: 0;
   font-size: 17px;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
@@ -59,14 +58,17 @@ nav a {
 }
 
 nav li a:hover {
-  color: var(--hover);
+  color: var(--primary);
+  background: var(--contrast);
+  border-radius: 5px;
+  padding: 10px;
   transition-duration: 400ms;
 }
 
 /* For span tags */
 
 .inspan, .inspan h2 {
-  font-weight: 550;
+  font-weight: 700;
 }
 
 .outspan {
@@ -99,7 +101,9 @@ body {
 }
 
 .textblock {
-    padding: 50px 250px;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 70%;
 }
 
 .textblock h3 {
@@ -235,8 +239,134 @@ input[type="text"] {
 /* Footer */
 
 footer {
+  bottom: 0;
+  width: 100%;
   font-size: 18px;
   background-color: var(--primary);
   color: var(--contrast);
-  padding: 30px 50px;
+}
+
+.main-content {
+  display: flex;
+  margin-left: 25px;
+}
+
+.main-content .box {
+  flex-basis: 100%;
+  padding: 10px 20px;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+}
+
+.box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+.left .content .social a {
+  padding: 0 5px;
+  color: var(--contrast);
+}
+
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.left .content .social a span:hover {
+  color: var(--primary);
+  background: var(--contrast);
+  border-radius: 5px;
+  transition-duration: 400ms;
+}
+
+.center .content .fan {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.center .content .fan:hover {
+  color: var(--primary);
+  background: var(--contrast);
+  border-radius: 5px;
+  transition-duration: 400ms;
+}
+
+.center .content .text {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 5px;
+  line-height: 45px;
+}
+
+.right form {
+  margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+  width: 100%;
+  background: var(--primary);
+  padding-left: 10px;
+  border: 3px solid var(--contrast);
+}
+
+.right form input::placeholder {
+  color: var(--contrast);
+}
+
+.right form input {
+  height: 50px;
+}
+
+.right form input:focus, .right form textarea:focus {
+  outline-color: var(--contrast);
+}
+
+.right form .text {
+  margin-bottom: 10px;
+}
+
+.right form .sign {
+  margin-top: 20px;
+}
+
+.right form .sign button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background: var(--contrast);
+  color: var(--primary);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right form .sign button:hover {
+  background: var(--primary);
+  color: var(--contrast);
+  font-weight: 600;
+  border: 2px solid var(--contrast);
+  transition-duration: 300ms;
+}
+
+.bottom center {
+  padding: 15px 5px;
+  font-size: 20px;
 }
