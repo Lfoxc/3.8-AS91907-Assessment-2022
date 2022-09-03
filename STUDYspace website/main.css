@@ -106,10 +106,17 @@ body {
   width: 70%;
 }
 
+.textblock h2 {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  font-size: 45px;
+}
+
 .textblock h3 {
   text-align: center;
   padding: 50px 0px;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .textblock p {
@@ -117,6 +124,58 @@ body {
   align-items: center;
   line-height: 1.8;
 }
+
+
+/* for grid layout on news & download page */
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+#app, #chrome {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.newsbox {
+  background: var(--contrast);
+  border: 5px solid var(--primary);
+  position: relative;
+  line-height: 30px;
+}
+
+.newsbox a {
+  color: var(--contrast);
+  background: var(--primary);
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+.newsbox a:hover {
+  background: var(--contrast);
+  color: var(--primary);
+  border-bottom: 5px solid var(--primary);
+}
+
+.newsbox h4 {
+  margin: 20px;
+  font-size: 19px;
+}
+
+.newsbox p {
+  margin: 20px;
+  width: 90%;
+  font-size: 15px;
+}
+
+
+
+
 
 /* For buttons */
 
@@ -126,11 +185,6 @@ body {
   border: none;
   padding: 10px 15px;
   border-radius: 3px;
-}
-
-#to-top {
-  float: right;
-  margin-right: 20px;
 }
 
 /* Checkbox input */
@@ -236,6 +290,44 @@ input[type="text"] {
   border: 3px solid var(--primary);
 }
 
+
+/* FAQ questions */
+.qa {
+  margin: 50px auto;
+  width: 70%;
+}
+
+.question {
+  background: var(--contrast);
+  border: 5px solid var(--primary);
+  padding: 15px;
+  margin: 35px 0;
+  position: relative;
+}
+
+.question h4 {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.question h4 span {
+  font-size: 20px;
+}
+
+.question .faq {
+  color: var(--primary);
+  font-size: 30px;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+
+
+
 /* Footer */
 
 footer {
@@ -275,7 +367,7 @@ footer {
 }
 
 .left .content .social a {
-  padding: 0 5px;
+  padding: 0 5px 0 2px;
   color: var(--contrast);
 }
 
@@ -326,6 +418,7 @@ footer {
   background: var(--primary);
   padding-left: 10px;
   border: 3px solid var(--contrast);
+  color: var(--contrast);
 }
 
 .right form input::placeholder {
