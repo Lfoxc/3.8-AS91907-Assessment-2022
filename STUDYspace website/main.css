@@ -3,7 +3,7 @@
   --primary: #FF6347;
   --contrast: #FFFFFF;
   --back: #F7F5F6;
-  --default-check: ##D5D5D5;
+  --default-check: #D5D5D5;
 }
 
 /* Default CSS for all pages */
@@ -48,7 +48,7 @@ nav li {
 nav h2 {
   float: left;
   font-size: 40px;
-  padding-left: 10px 0px;
+  padding-left: 0px;
 }
 
 nav a {
@@ -176,9 +176,6 @@ body {
   width: 90%;
   font-size: 15px;
 }
-
-
-
 
 
 /* For buttons */
@@ -530,7 +527,8 @@ footer {
   transition-duration: 300ms;
 }
 
-.bottom center {
+.bottom {
   padding: 15px 5px;
   font-size: 20px;
+  text-align: center;
 }
