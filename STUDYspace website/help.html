@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <script src="https://kit.fontawesome.com/33a06fc26a.js" crossorigin="anonymous"></script>
-  <title>STUDYspace Home</title>
+  <title>Talk to us!</title>
 </head>
 <body>
   <header>
@@ -25,61 +25,34 @@
     </nav>
   </header>
 
-  <section class = "landing" id = "top">
-    <h2>Welcome to STUDYspace!</h2>
+  <section class = "textblock">
+    <h2>Contact us</h2>
+    <form>
+      <div class = "half">
+        <div class = "item">
+          <label for="name"><i class="fam fa-solid fa-user"></i> Your name</label>
+          <input type="text" id = "name">
+        </div>
+        <div class = "item">
+          <label for="em"><i class="fam fa-solid fa-envelope"></i> Your Email </label>
+          <input type="email" id = "em">
+        </div>
+      </div>
+      <div class = "full">
+        <label for="message"><i class="fam fa-solid fa-message"></i> Message</label>
+        <textarea name="" id="message"></textarea>
+      </div>
+
+      <div class = "action">
+        <input type="submit" value = "Send Message">
+        <input type="reset" value = "Clear">
+      </div>
+
+    </form>
   </section>
 
-  <section class = "textblock">
-    <h3>What is STUDYspace?</h3>
-    <p><span class = "outspan"><span class = "inspan">STUDY</span>space</span> is a procrastination-prevention/productivity program which attempts to help students struggling
-      to stay on track and tackle procrastination. Whether you decide to use our app or Google Chrome Extension,
-      STUDYspace will allow you to study distraction-free by getting you to select the websites of your choice that
-    pose the biggest threat to your productivity, which we will then block until you choose to disable it or until
-  a time which is also chosen by you runs out. Scroll down to read more about the current modes that we have envisioned
-for STUDYspace once it is released!</p>
-  </section>
 
-  <section class = "textblock">
-    <div class = "webcheck">
-      <input type="checkbox" id = "check">
-      <label for = "check">Youtube</label>
-    </div>
-    <h3>Manual mode</h3>
-    <p>The main purpose of using STUDYspace is to allow students to identify their
-    biggest distractions in the digital world and take action to prevent these distractions
-  from affecting their studies. Manual mode allows users to manually control how long they
-feel they want to work distraction-free. Unlike the other modes, Manual mode only requires
-one step to setup the website block, which is to simply choose which websites you want blocked.
-Once the block is activated, users can choose when they want it to be disabled.</p>
-  </section>
 
-  <section class = "textblock">
-    <div class = "webcheck" id = "time">
-      <div class = "updown" id = "up">
-        <i class="fan fa-solid fa-angle-up"></i>
-        <i class="fan fa-solid fa-angle-up"></i>
-     </div>
-      <h1>10:00</h1>
-      <div class = "updown" id = "down">
-      <i class="fan fa-solid fa-angle-down"></i>
-      <i class="fan fa-solid fa-angle-down"></i>
-    </div>
-      <button class = "btn">Start</button>
-      <button class = "btn">Pause</button>
-    </div>
-    <h3>Timed modes: Pomodoro & Exam mode</h3>
-    <p><span class = "outspan"><span class = "inspan">Pomodoro mode</span></span> makes use of the Pomodoro technique. The Pomodoro technique is a popular time management tool which is
-      frequently used by people who struggle with distractions or procrastinates
-      easily. In this mode, the user can choose a time of up to 25 minutes along with the length of
-      their rest breaks between study sessions. After the user has chosen a time, they will
-    then move onto choosing the websites they want to be blocked for their chosen time.</p>
-    <br>
-    <br>
-    <p><span class = "outspan"><span class = "inspan">Exam mode</span></span> is our newest STUDYspace mode concept. Similar to Pomodoro mode, Exam mode will require the user to choose a time of their choice. However,
-      Exam mode will simulate real exam time constraints, meaning the user will only be able to choose a time between 45 minutes and 3 hours.
-      Once a time is selected, STUDYspace will block all websites except for Google and it's applications to allow for zero distractions
-    much like in real exams.</p>
-  </section>
 
 
   <footer>
@@ -138,6 +111,7 @@ Once the block is activated, users can choose when they want it to be disabled.<
       </center>
     </div>
   </footer>
+
 
 </body>
 </html>
