@@ -4,6 +4,9 @@
   --contrast: #FFFFFF;
   --back: #F7F5F6;
   --default-check: #D5D5D5;
+  --back-dark: #1B1B1B;
+  --light: #242124;
+  --check-dark: #3D3C3A;
 }
 
 /* Default CSS for all pages */
@@ -531,4 +534,27 @@ footer {
   padding: 15px 5px;
   font-size: 20px;
   text-align: center;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--back-dark);
+  }
+  .textblock h2, .textblock h3, .textblock p {
+    color: var(--contrast);
+  }
+
+  .newsbox, .webcheck, .textblock form, .textblock .half .item input, .textblock form .full textarea, .question {
+    background: var(--light);
+    color: var(--contrast);
+  }
+
+  .newsbox a:hover {
+    background: var(--light);
+  }
+
+  .webcheck input[type="checkbox"] {
+    background-color: var(--check-dark);
+  }
 }
