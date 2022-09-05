@@ -68,6 +68,13 @@ nav li a:hover {
   transition-duration: 400ms;
 }
 
+.select {
+  color: var(--primary);
+  background: var(--contrast);
+  border-radius: 5px;
+  padding: 10px;
+}
+
 /* For span tags */
 
 .inspan, .inspan h2 {
@@ -537,6 +544,7 @@ footer {
 }
 
 
+/* Dark-mode */
 @media (prefers-color-scheme: dark) {
   body {
     background: var(--back-dark);
@@ -556,5 +564,17 @@ footer {
 
   .webcheck input[type="checkbox"] {
     background-color: var(--check-dark);
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px)  {
+  .boxes, #app, #chrome {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .textblock form .action input{
+    margin-bottom: 15px;
   }
 }
