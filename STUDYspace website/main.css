@@ -158,6 +158,7 @@
   margin-right: 9px;
 }
 
+
 /* For span tags */
 
 .inspan, .inspan h2 {
@@ -169,8 +170,6 @@
 }
 
 /* Landing page */
-
-
 .landing {
   background-image: url(temporarylanding.jpg);
   height: 100vh;
@@ -187,8 +186,8 @@
   color: var(--contrast);
 }
 
-/* For the textblock classes that is used in all pages */
 
+/* For the textblock classes that is used in all pages */
 body {
     background-color: var(--back);
 }
@@ -304,8 +303,8 @@ body {
 .webcheck input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background-color: #d5d5d5;
   cursor: pointer;
   display: flex;
@@ -316,7 +315,7 @@ body {
 
 .webcheck label {
   font-size: 80px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .webcheck input[type="checkbox"]::after {
@@ -713,5 +712,36 @@ footer {
   .landing {
     height: 85vh;
   }
+
+  .webcheck label {
+    font-size: 45px;
+  }
+
+  .webcheck input[type="checkbox"] {
+    height: 45px;
+    width: 45px;
+  }
+
+  .webcheck input[type="checkbox"]::after {
+    font-size: 30px;
+  }
+
+  #time h1 {
+    font-size: 70px;
+  }
+
+  #time {
+    height: 275px;
+  }
+
+  .question .faq {
+    vertical-align: middle;
+    right: 25px;
+  }
+
+  .question h4 {
+    padding-right: 50px;
+  }
+
 
 }
