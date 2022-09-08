@@ -182,7 +182,7 @@
 
 .landing h2 {
   font-size: 65px;
-  padding: 350px;
+  padding-top: 300px;
   font-weight: 150;
   color: var(--contrast);
 }
@@ -197,11 +197,11 @@ body {
   margin: 50px auto;
   max-width: 1200px;
   width: 70%;
+  letter-spacing: 1.3px;
 }
 
 .textblock h2, h2 span {
   text-align: center;
-  padding-top: 120px;
   padding-bottom: 40px;
   font-size: 45px;
 }
@@ -215,7 +215,7 @@ body {
 .textblock p {
   text-align: left;
   align-items: center;
-  line-height: 1.8;
+  line-height: 2.4;
 }
 
 .textblock a {
@@ -691,9 +691,9 @@ footer {
     top: 0;
     right: -300px;
     background: var(--primary);
-    width: 300px;
+    width: 200px;
     height: 100%;
-    padding-top: 65px;
+    padding-top: 100px;
   }
 
   .menu li {
@@ -702,6 +702,16 @@ footer {
 
   .menu li a  {
     padding: 30px;
+  }
+
+  .landing h2 {
+    text-align: left;
+    padding: 150px 35px;
+    margin-right: 20px;
+  }
+
+  .landing {
+    height: 85vh;
   }
 
 }
