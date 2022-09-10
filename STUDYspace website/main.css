@@ -7,6 +7,7 @@
   --back-dark: #1B1B1B;
   --light: #242124;
   --check-dark: #3D3C3A;
+  --primary-dark: #ED5C42;
 }
 
 /* Default CSS for all pages */
@@ -221,6 +222,21 @@ body {
   text-decoration: none;
 }
 
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 80%;
+  height: 80%;
+  margin: 30px 0;
+}
+
+#newmode, #studychoice, #breakchoice {
+  width: 50%;
+  height: 50%;
+}
+
 
 /* for grid layout on news & download page */
 .boxes {
@@ -267,6 +283,11 @@ body {
   margin: 20px;
   width: 90%;
   font-size: 15px;
+}
+
+.newsbox img {
+  width: 100%;
+  padding: 20px;
 }
 
 
