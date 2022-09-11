@@ -212,7 +212,7 @@ body {
   font-size: 35px;
 }
 
-.textblock p {
+.textblock p, .textblock ol {
   text-align: left;
   align-items: center;
   line-height: 2.4;
@@ -235,6 +235,33 @@ body {
 #newmode, #studychoice, #breakchoice {
   width: 50%;
   height: 50%;
+}
+
+.textblock .video {
+  text-align: center;
+}
+
+.video ul {
+  list-style: none;
+}
+
+.video iframe {
+  margin: 20px 0;
+}
+
+.textblock ol {
+  padding: 30px 50px;
+  background: var(--contrast);
+  margin: 20px;
+  border-radius: 3px;
+}
+
+.textblock ol li {
+  padding-bottom: 30px;
+}
+
+.textblock ol li:last-child {
+  padding-bottom: 0;
 }
 
 
@@ -545,6 +572,7 @@ footer {
 
 .left .content p {
   text-align: justify;
+  line-height: 150%;
 }
 
 .left .content .social a {
@@ -764,5 +792,8 @@ footer {
     padding-right: 50px;
   }
 
+  .video iframe {
+    width: 100%;
+  }
 
 }
