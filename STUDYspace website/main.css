@@ -433,38 +433,57 @@ input[type="text"] {
 
 
 /* FAQ questions */
-.qa {
-  margin: 50px auto;
-  width: 70%;
+
+.accordian {
+  padding-top: 30px;
+  width: 100%;
+  margin: 0, auto;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
-.question {
-  background: var(--contrast);
-  border: 5px solid var(--primary);
-  padding: 15px;
-  margin: 35px 0;
-  position: relative;
-}
-
-.question h4 {
-  padding: 15px;
-  font-size: 20px;
-}
-
-.question h4 span {
-  font-size: 20px;
-}
-
-.question .faq {
-  color: var(--primary);
-  font-size: 30px;
-  position: absolute;
-  right: 50px;
-  top: 30px;
-  font-weight: 800;
+.accordian-header {
+  width: 100%;
+  padding: 25px 20px;
+  background: var(--primary);
+  border: none;
+  border-bottom: 1px solid var(--contrast);
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  color: var(--contrast);
   cursor: pointer;
 }
 
+.accordian-body {
+  background-color: var(--contrast);
+  padding: 0 30px;
+  letter-spacing: 1.3px;
+  line-height: 2.4;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordian-body.active {
+  padding: 30px;
+  max-height: 500px;
+}
+
+.accordian-header.active {
+  background: var(--contrast);
+  border: 4px solid var(--primary);
+  color: #000;
+}
+
+.accordian-header.active i {
+  transform: rotate(180deg);
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Contact form */
 .textblock form {
   background: var(--contrast);
   padding: 50px 30px;
@@ -696,6 +715,11 @@ footer {
   .webcheck input[type="checkbox"] {
     background-color: var(--check-dark);
   }
+
+  .accordian-body, .accordian-header.active {
+    background: var(--light);
+    color: var(--contrast);
+  }
 }
 
 /* Media Queries */
@@ -794,6 +818,10 @@ footer {
 
   .video iframe {
     width: 100%;
+  }
+
+  .accordian-body.active {
+    max-height: 800px;
   }
 
 }
