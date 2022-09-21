@@ -37,3 +37,6 @@ window.onclick = (e) => {
     acc_contents.forEach(acc => acc.classList.remove('active'));
   }
 }
+
+
+//Contact form
