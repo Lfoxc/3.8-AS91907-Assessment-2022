@@ -29,7 +29,6 @@
         <li><a href="news.html" class = "select"><i class="fas fa-solid fa-newspaper"></i>News</a></li>
         <li><a href="download.html"><i class="fas fa-solid fa-download"></i>Download</a></li>
         <li><a href="faq.html"><i class="fas fa-solid fa-circle-question"></i>FAQ</a></li>
-        <li><a href="help.html"><i class="fas fa-solid fa-address-card"></i>Contact</a></li>
       </ul>
     </div>
 
@@ -57,10 +56,10 @@ STUDYspace as an app after releasing the browser extension and getting some feed
         <div class = "content">
           <p>STUDYspace inc. is a New Zealand-based organization which looks to help students with their studies. Our previous project, DITCS, is a Digital Technologies help site created for Digital Technology students in NCEA.</p>
           <div class = "social">
-            <a href=""><span class="fab fa-brands fa-facebook"></span></a>
-            <a href=""><span class="fab fa-brands fa-twitter"></span></a>
-            <a href=""><span class="fab fa-brands fa-instagram"></span></a>
-            <a href=""><span class="fab fa-brands fa-youtube"></span></a>
+            <a href="https://www.facebook.com/" target = "_blank"><span class="fab fa-brands fa-facebook"></span></a>
+            <a href="https://twitter.com/?lang=en" target = "_blank"><span class="fab fa-brands fa-twitter"></span></a>
+            <a href="https://www.instagram.com/" target = "_blank"><span class="fab fa-brands fa-instagram"></span></a>
+            <a href="https://www.youtube.com/" target = "_blank"><span class="fab fa-brands fa-youtube"></span></a>
           </div>
         </div>
       </div>
@@ -86,15 +85,19 @@ STUDYspace as an app after releasing the browser extension and getting some feed
       </div>
 
       <div class = "right box">
-        <h3>Sign up now</h3>
+        <h3>Contact us!</h3>
         <div class = "content">
-          <form action="#">
+          <form action="https://formspree.io/f/xrgdqpbb" method="POST">
             <div class = "email">
-              <div class = "text">To receive updates on <span class = "inspan">STUDY</span>space's development.</div>
-              <input type="email" required placeholder="Your Email Address...">
+              <div class = "text">Email*</div>
+              <input type="email" required placeholder="Your Email Address..." name = "Email">
+            </div>
+            <div class = "msg">
+              <div class = "text">Message*</div>
+              <textarea name="Message" placeholder = "Your Message..."></textarea required>
             </div>
             <div class = "sign">
-              <button>Sign up!</button>
+              <button type = "submit">Submit</button>
             </div>
           </form>
         </div>

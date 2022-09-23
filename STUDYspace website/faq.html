@@ -29,7 +29,6 @@
         <li><a href="news.html"><i class="fas fa-solid fa-newspaper"></i>News</a></li>
         <li><a href="download.html"><i class="fas fa-solid fa-download"></i>Download</a></li>
         <li><a href="faq.html" class = "select"><i class="fas fa-solid fa-circle-question"></i>FAQ</a></li>
-        <li><a href="help.html"><i class="fas fa-solid fa-address-card"></i>Contact</a></li>
       </ul>
     </div>
 
@@ -38,7 +37,7 @@
     <h2>FAQ</h2>
     <p>Welcome to our <span class = "outspan"><span class = "inspan">Frequently Asked Questions</span></span> page! Here you can find the who, what,
       when, how and why regarding <span class = "outspan"><span class = "inspan">STUDY</span>space</span>. If you are unable to find the answers you area
-    looking for, please email us <a href="help.html"><span class = "outspan"><span class = "inspan">here</span></span></a> and we will be sure to get back to you ASAP!</p>
+    looking for, please email us <a href="#contact"><span class = "outspan"><span class = "inspan">here</span></span></a> and we will be sure to get back to you ASAP!</p>
 
 
     <div class = "accordian">
@@ -187,60 +186,64 @@
     </div>
     </section>
 
-  <footer>
-    <div class = "main-content">
-      <div class = "left box">
-        <h3>About us</h3>
-        <div class = "content">
-          <p>STUDYspace inc. is a New Zealand-based organization which looks to help students with their studies. Our previous project, DITCS, is a Digital Technologies help site created for Digital Technology students in NCEA.</p>
-          <div class = "social">
-            <a href=""><span class="fab fa-brands fa-facebook"></span></a>
-            <a href=""><span class="fab fa-brands fa-twitter"></span></a>
-            <a href=""><span class="fab fa-brands fa-instagram"></span></a>
-            <a href=""><span class="fab fa-brands fa-youtube"></span></a>
+    <footer>
+      <div class = "main-content">
+        <div class = "left box">
+          <h3>About us</h3>
+          <div class = "content">
+            <p>STUDYspace inc. is a New Zealand-based organization which looks to help students with their studies. Our previous project, DITCS, is a Digital Technologies help site created for Digital Technology students in NCEA.</p>
+            <div class = "social">
+              <a href="https://www.facebook.com/" target = "_blank"><span class="fab fa-brands fa-facebook"></span></a>
+              <a href="https://twitter.com/?lang=en" target = "_blank"><span class="fab fa-brands fa-twitter"></span></a>
+              <a href="https://www.instagram.com/" target = "_blank"><span class="fab fa-brands fa-instagram"></span></a>
+              <a href="https://www.youtube.com/" target = "_blank"><span class="fab fa-brands fa-youtube"></span></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class = "center box">
-        <h3>Address</h3>
-        <div class = "content">
-          <div class = "place">
-            <span class="fan fa-solid fa-location-dot"></span>
-            <span class = "text">Queenstown, New Zealand</span>
-          </div>
+        <div class = "center box">
+          <h3>Address</h3>
+          <div class = "content">
+            <div class = "place">
+              <span class="fan fa-solid fa-location-dot"></span>
+              <span class = "text">Queenstown, New Zealand</span>
+            </div>
 
-          <div class = "phone">
-            <span class="fan fa-solid fa-phone"></span>
-            <span class = "text">+64 20 419 50151</span>
-          </div>
+            <div class = "phone">
+              <span class="fan fa-solid fa-phone"></span>
+              <span class = "text">+64 20 419 50151</span>
+            </div>
 
-          <div class = "email">
-            <span class="fan fa-solid fa-envelope"></span>
-            <span class = "text">18lbeale@wakatipu.school.nz</span>
-          </div>
-        </div>
-      </div>
-
-      <div class = "right box">
-        <h3>Sign up now</h3>
-        <div class = "content">
-          <form action="#">
             <div class = "email">
-              <div class = "text">To receive updates on <span class = "inspan">STUDY</span>space's development.</div>
-              <input type="email" required placeholder="Your Email Address...">
+              <span class="fan fa-solid fa-envelope"></span>
+              <span class = "text">18lbeale@wakatipu.school.nz</span>
             </div>
-            <div class = "sign">
-              <button>Sign up!</button>
-            </div>
-          </form>
+          </div>
+        </div>
+
+        <div class = "right box" id = "contact">
+          <h3>Contact us!</h3>
+          <div class = "content">
+            <form action="https://formspree.io/f/xrgdqpbb" method="POST">
+              <div class = "email">
+                <div class = "text">Email*</div>
+                <input type="email" required placeholder="Your Email Address..." name = "Email">
+              </div>
+              <div class = "msg">
+                <div class = "text">Message*</div>
+                <textarea name="Message" placeholder = "Your Message..."></textarea required>
+              </div>
+              <div class = "sign">
+                <button type = "submit">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <div class = "bottom">
-        <span class = "credit"><span class ="inspan">STUDY</span>space inc. | &copy; 2022 All rights reserved</span>
-    </div>
-  </footer>
+      <div class = "bottom">
+          <span class = "credit"><span class ="inspan">STUDY</span>space inc. | &copy; 2022 All rights reserved</span>
+      </div>
+    </footer>
 
   <script src="main.js" charset="utf-8"></script>
 </body>
