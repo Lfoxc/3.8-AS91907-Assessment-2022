@@ -39,4 +39,40 @@ window.onclick = (e) => {
 }
 
 
-//Contact form
+//Timer interactive
+var start = document.getElementById('start');
+
+var m = document.getElementById("minute");
+
+var s = document.getElementById("sec");
+
+var startTimer = null;
+
+var numLabel = document.getElementById("count");
+
+start.addEventListener('click', function(){
+    //initialize the variable
+    function startInterval(){
+        startTimer = setInterval(function() {
+            timer();
+        }, 1000);
+    }
+    startInterval();
+})
+
+function timer(){
+    if(m.value == 0 && s.value == 0){
+        m.value = 0;
+        s.value = 0;
+    } else if(s.value != 0){
+        s.value--;
+    } else if(m.value != 0 && s.value == 0){
+        s.value = 59;
+        m.value--;
+    }
+    displayCount();
+}
+
+function displayCount() {
+  numLabel.innerHTML = `${m.value}:${s.value}`;
+}
