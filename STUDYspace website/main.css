@@ -351,7 +351,6 @@ body {
 
 
 .webcheck input[type="checkbox"] {
-  -webkit-appearance: none;
   appearance: none;
   width: 60px;
   height: 60px;
@@ -425,7 +424,7 @@ body {
 .accordian {
   padding-top: 30px;
   width: 100%;
-  margin: 0, auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -445,6 +444,10 @@ body {
 
 .accordian-header i {
   color: var(--primary);
+}
+
+.accordian-header strong {
+  text-align: left;
 }
 
 .accordian-body {
@@ -635,7 +638,7 @@ footer {
     color: var(--contrast);
   }
 
-  .newsbox, .webcheck, .textblock form, .textblock .half .item input, .textblock form .full textarea, .question {
+  .newsbox, .webcheck, .textblock form, .textblock .half .item input, .textblock form .full textarea, .question, .accordian-body, .accordian-header, .settime input {
     background: var(--light);
     color: var(--contrast);
   }
@@ -646,11 +649,6 @@ footer {
 
   .webcheck input[type="checkbox"] {
     background-color: var(--check-dark);
-  }
-
-  .accordian-body, .accordian-header.active {
-    background: var(--light);
-    color: var(--contrast);
   }
 }
 
