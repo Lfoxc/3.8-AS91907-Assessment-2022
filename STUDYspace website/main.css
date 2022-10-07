@@ -2,6 +2,7 @@
 :root {
   --primary: #FF6347;
   --contrast: #FFFFFF;
+  --font-color: #000000;
   --back: #F7F5F6;
   --default-check: #D5D5D5;
   --back-dark: #1B1B1B;
@@ -159,6 +160,13 @@
   margin-right: 9px;
 }
 
+.navigation .faj {
+  color: var(--contrast);
+  padding: 0 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 
 /* For span tags */
 
@@ -210,12 +218,14 @@ body {
   text-align: center;
   padding: 50px 0px;
   font-size: 35px;
+  color: var(--font-color);
 }
 
 .textblock p, .textblock ol {
   text-align: left;
   align-items: center;
   line-height: 2.4;
+  color: var(--font-color);
 }
 
 .textblock a {
@@ -416,6 +426,7 @@ body {
 #time .btn {
   margin: 10px 0;
   width: 15%;
+  cursor: pointer;
 }
 
 
@@ -651,6 +662,7 @@ footer {
     background-color: var(--check-dark);
   }
 }
+
 
 /* Media Queries */
 @media only screen and (max-width: 1200px)  {

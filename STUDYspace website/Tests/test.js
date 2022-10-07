@@ -1,25 +1,12 @@
-const acc_btns = document.querySelectorAll('.accordian-header');
-const acc_contents = document.querySelectorAll('.accordian-body');
+var button = document.getElementById("toggle");
 
-acc_btns.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+if(button){
+  button.addEventListener('click', () => {
+    document.body.classList.toggle('night');
+    localStorage.setItem('theme', document.body.classList.contains('night') ? 'night' : 'light');
+  });
+}
 
-    acc_contents.forEach((acc) => {
-      if(e.target.nextElementSibling !== acc && acc.classList.contains('active')) {
-        acc.classList.remove('active');
-        acc_btns.forEach(btn => btn.classList.remove('active'));
-      }
-    })
-
-    const panel = btn.nextElementSibling;
-    panel.classList.toggle('active');
-    btn.classList.toggle('active');
-  })
-})
-
-window.onclick = (e) => {
-  if (!e.target.matches(".accordian-header")) {
-    acc_btns.forEach(btn => btn.classList.remove('active'));
-    acc_contents.forEach(acc => acc.classList.remove('active'));
-  }
+if (localStorage.getItem('theme') === 'night') {
+    document.body.classList.add('night');
 }

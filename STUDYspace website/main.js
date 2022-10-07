@@ -40,7 +40,7 @@ gentext();
 
 
 //Timer interactive
-var start = document.getElementById('start');
+var start = document.querySelector('#start');
 
 var m = document.getElementById("minute");
 var s = document.getElementById("sec");
@@ -57,6 +57,15 @@ start.addEventListener('click', function(){
         }, 1000);
     }
     startInterval();
+
+    function disableinput() {
+      start.disabled = true;
+      start.innerHTML = `---`;
+      m.disabled = true;
+      s.disabled = true;
+    }
+
+    disableinput();
 })
 
 function timecheck() {
@@ -98,5 +107,13 @@ function displayCount() {
     numLabel.innerHTML = `00:${s.value}`;
   } else if(m.value == 0 && s.value < 10) {
     numLabel.innerHTML = `00:0${s.value}`;
+  }
+
+  if(m.value == 0 && s.value == 0) {
+    start.disabled = false;
+    start.innerHTML = `Start`;
+    m.disabled = false;
+    s.disabled = false;
+    clearInterval(startTimer);
   }
 }

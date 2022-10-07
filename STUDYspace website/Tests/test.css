@@ -15,51 +15,20 @@
   font-weight: 500;
 }
 
-body {
-  background-color: var(--back);
-}
-
-.accordian {
-  width: 750px;
-  margin: 0, auto;
-  overflow: hidden;
+.darkToggle {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
   border-radius: 5px;
+  border: 2px solid #555;
 }
 
-.accordian-header {
-  width: 100%;
-  padding: 25px 20px;
-  background: var(--primary);
-  border: none;
-  border-bottom: 1px solid var(--contrast);
-  outline: none;
-  display: flex;
-  justify-content: space-between;
-  color: var(--contrast);
-  cursor: pointer;
+.darkToggle:checked {
+  background: #333;
 }
 
-.accordian-body {
-  background-color: var(--contrast);
-  padding: 0 30px;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.accordian-body.active {
-  padding: 16px;
-  max-height: 160px;
-}
-
-.accordian-header.active {
-  background: var(--contrast);
-  border: 1px solid var(--primary);
-  color: #000;
-}
-
-.accordian-header.active i {
-  transform: rotate(180deg);
-  color: var(--primary);
-  transition: all 0.3s ease-in-out;
+.dark {
+  color: white;
+  background: #444;
 }
